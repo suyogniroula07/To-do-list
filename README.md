@@ -1,1 +1,1 @@
-![To do list](images/To do list.png)
+![To do list](images/preview.png)

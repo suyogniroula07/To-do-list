@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do</title>
+  <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="tag">My Tasks</div>
+    <h1>Today's List</h1>
+    <div class="stats-bar">
+      <span class="stat-pill active" id="pendingPill">0 remaining</span>
+      <span class="stat-pill done-pill" id="donePill">0 done</span>
+    </div>
+  </header>
+
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <div class="input-row">
+    <input type="text" id="taskInput" placeholder="What needs to be done?" maxlength="120" autocomplete="off"/>
+    <button id="addBtn">+</button>
+  </div>
+
+  <ul class="list" id="list"></ul>
+  <div class="empty" id="empty">
+    <div class="empty-icon">✦</div>
+    All clear! Add a task above.
+  </div>
+
+  <div class="footer">
+    <button class="clear-btn" id="clearDone">Clear completed</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
